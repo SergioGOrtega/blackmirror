@@ -1,0 +1,38 @@
+/******************************************************************************/
+/*                   Style Sheet for Black Mirror Web Site                    */
+/*                   Author: Sergio Gamez Ortega                              */
+/*                   Version: 1.0                                             */
+/*                   Comments: Class project 2023-24                          */
+/******************************************************************************/
+
+/* Cuando quiero usar una tipografía y asegurarme de que se verá correctamente, suministro también con la página el archivo de la fuente que sera .ttf ó .otf */
+/* 1º ahora, enlazo el archivo descargado */
+/* 2º utilizar el nombre de la font-family donde quiera usarlo */
+
+/* Esto no es un selector, es un enlace */
+@font-face {
+    font-family: blackmirror;
+    src: url(../font/FontsFree-Net-Proxima-Nova-Bold.otf);
+}
+
+@font-face {
+    font-family: textonormal;
+    src: url(../font/OpenSans-Regular.ttf);
+}
+
+body {
+    margin: 0; /* Esto es para desctivar el espacio de separacion por defecto */
+    padding: 0;
+    background-color: #202020;
+    font-family: textonormal;
+}
+
+nav {
+    background-color: white;
+}
+
+#wrapper {
+    background-color: #b0b0b0;
+    width: 80%;   /* Ancho fijado al 80% */
+    margin: auto; /* Centrado automático */
+}
