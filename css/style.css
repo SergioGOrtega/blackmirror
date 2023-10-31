@@ -9,7 +9,6 @@
 /* 1º ahora, enlazo el archivo descargado */
 /* 2º utilizar el nombre de la font-family donde quiera usarlo */
 
-/* Esto no es un selector, es un enlace */
 @font-face {
     font-family: blackmirror;
     src: url(../font/FontsFree-Net-Proxima-Nova-Bold.otf);
@@ -20,6 +19,10 @@
     src: url(../font/OpenSans-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0; /* Esto es para desctivar el espacio de separacion por defecto */
     padding: 0;
@@ -28,11 +31,35 @@ body {
 }
 
 nav {
-    background-color: white;
+    background-color: #808080;
+    padding: 20px;
 }
 
 #wrapper {
     background-color: #b0b0b0;
     width: 80%;   /* Ancho fijado al 80% */
     margin: auto; /* Centrado automático */
+}
+
+/****************************************** HERO SECTION ******************************************/
+
+#hero {
+    background-image: url(../img/blck-mirror-serie.webp);
+    background-size: cover;
+    height: 95vh; /* el 95% del alto de la ventana del navegador */
+    background-position: center;
+    position: relative; /* Contenedor relativo */
+}
+
+#hero button {
+    background-color: #808080;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    position: absolute; /* Contenido absoluto */
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%); /* Lo traslado a la mitad de su tamaño */
 }
